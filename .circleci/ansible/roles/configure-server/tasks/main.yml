@@ -4,10 +4,10 @@
   shell: |
     curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
 
-- name: "install nodejs and npm dependencies"
+- name: "install nodejs"
   become: true
   apt:
-    name: ["nodejs", "npm"]
+    name: ["nodejs"]
     state: latest
     update_cache: yes
 
