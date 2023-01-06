@@ -212,7 +212,7 @@ jobs:
       - checkout
       - install_ansible
       - add_ssh_keys:
-          fingerprints: ["a8:dd:e1:6f:94:c6:b9:bd:bb:05:79:ba:d1:90:9e:0b"]
+          fingerprints: ["fc:fc:68:80:a1:9b:e8:e7:d1:84:ce:45:41:a7:4b:fc"]
       - attach_workspace:
           at: ~/
       - run:
@@ -220,7 +220,7 @@ jobs:
           command: |
             cd .circleci/ansible
             cat inventory.txt
-            ansible-playbook -i inventory.txt configure-server.yml 
+            ansible-playbook -i inventory.txt configure-server.yml
       
       # - destroy-environment
 
